@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Ordering App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-text">
+            <h1>Jimmy's Diner</h1>
+            <p>The best burgers and pizzas in town</p>
+        </div>
+    </header>
+    <div class="container" id="container">
+        <div class="container" id="container-menu"></div>
+        <div class="container" id="container-order"></div>
+        <div class="card-container">
+            <div class="payment-modal" id="payment-modal">
+                <h3>Enter card details</h3>
+                <form class="payment-form">
+                    <input type="text" id="user-name" placeholder="Enter your name" required>
+                    <input type="text" placeholder="Enter card number" required>
+                    <input type="text" placeholder="Enter cvv" required>
+                    <button type="submit" class="submit" id="pay">Pay</button>
+                </form>
+            </div>
+        </div>
+        <div id="complete-state">
+        </div>
+    </div>
+    <script src="index.js" type="module"></script>
+</body>
+</html>

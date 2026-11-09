@@ -1,0 +1,123 @@
+body{
+    font-family: "Inter", sans-serif;
+    margin: 0;
+}
+/* header */
+header{
+    background-image: url(images/yellow.webp);
+    background-size:cover ;
+}
+.header-text{
+    padding: 10px;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+/* menu */
+.menu-items{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 1px solid #d2d2d2;
+}
+.item-emoji {
+    font-size: 40px;
+}
+.item-details{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.item-name{
+margin-bottom: 5px;
+}
+.item-ingredients{
+    color: #8b8b8b;
+    margin: 0;
+}
+.add-btn{
+    background-color: transparent;
+    border-radius:100%;
+    padding: 10px;
+    font-size: larger;
+    color: #3b3b3b;
+    border: 1px solid #dedede;
+    margin-left: auto;
+    align-self: center;
+    margin-top: 0;
+}
+/* Your Order */
+.your-order{
+    text-align: center;
+}
+.item{
+    display: flex;
+    flex-direction: row;
+}
+.remove{
+    border:none;
+    background-color: transparent;
+    color: #bbbbbb;
+}
+.order-price{
+    margin-left: auto;
+}
+.total{
+    border-top: 2px solid #393333;
+    display: flex;
+    justify-content: space-between;
+}
+.submit{
+    background-color: rgb(251, 162, 12);
+    border-radius: 3px;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 14px 0;
+    margin: 20px 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+/* payment form */
+.payment-modal{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    max-width: 450px;
+    box-sizing: border-box;
+    background: white;
+    padding: 30px;
+    box-shadow: 0 0 1000px 1000px rgba(0, 0, 0, 0.3);
+}
+.payment-form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.payment-modal h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.payment-modal input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 8px;
+}
+/* complete message */
+
+.message{
+    text-align: center;
+    background-color: #ecfdf5;
+    color: #065f44 ;
+    width: 80%;
+    margin: 25px auto;
+    padding: 15px 25px;
+    font-weight: 500;
+}
